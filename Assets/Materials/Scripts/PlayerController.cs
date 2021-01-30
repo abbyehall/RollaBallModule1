@@ -33,6 +33,11 @@ public class PlayerController : MonoBehaviour{
     {
         if(other.gameObject.CompareTag("Pick Up"))
         {
+            if (other.gameObject.name == "Speed")
+            {
+                speed = speed + 5;
+                Debug.Log("Zoom");
+            }
             other.gameObject.SetActive(false);
             count = count + 1;
             SetCountText();
