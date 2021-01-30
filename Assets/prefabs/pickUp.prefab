@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 697069348036277910}
   - component: {fileID: 697069348036277911}
   - component: {fileID: 697069348036277908}
+  - component: {fileID: 2905526238126426797}
   m_Layer: 0
   m_Name: pickUp
   m_TagString: Pick Up
@@ -27,13 +28,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697069348036277909}
-  m_LocalRotation: {x: 0.54852563, y: 0.22640291, z: 0.5577734, w: 0.5803019}
+  m_LocalRotation: {x: 0.54852515, y: 0.22640698, z: 0.55777204, w: 0.58030206}
   m_LocalPosition: {x: 0, y: 0.5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 45, y: 45, z: 45}
+  m_LocalEulerAnglesHint: {x: 22.585, y: 71.32, z: 104.039}
 --- !u!33 &697069348036277913
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: e8829deb3cd675544b195e2665fe5f11, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,3 +109,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af871421631d02a4d9f083a9eedbaf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2905526238126426797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697069348036277909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abcfafa05f6d1d428c7902a5694773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickupType: 0

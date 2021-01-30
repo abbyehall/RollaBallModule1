@@ -31,15 +31,21 @@ public class PlayerController : MonoBehaviour{
 
     void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.CompareTag("Pick Up"))
+        var pickUpScript = other.gameObject.GetComponent<PickUp>();
+
+        if (pickUpScript != null)
         {
-            if (other.gameObject.name == "Speed")
+            switch (pickUpScript.PickupType)
             {
-                speed = speed + 5;
-                Debug.Log("Zoom");
+                case PickUp.PickUpType.SpeedUp:
+                    speed = speed + 5;
+                    break;
+                case PickUp.PickUpType.Regular:
+                    count++;
+                    break;
             }
+
             other.gameObject.SetActive(false);
-            count = count + 1;
             SetCountText();
         }
     }
@@ -47,7 +53,7 @@ public class PlayerController : MonoBehaviour{
     void SetCountText()
     {
         countText.text = "Count: " + count.ToString();
-        if (count >= 12)
+        if (count >= 15)
         {
             winText.text = "You Win!!";
         }

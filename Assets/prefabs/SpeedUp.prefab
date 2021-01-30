@@ -13,8 +13,9 @@ GameObject:
   - component: {fileID: 697069348036277910}
   - component: {fileID: 697069348036277911}
   - component: {fileID: 697069348036277908}
+  - component: {fileID: 2905526238126426797}
   m_Layer: 0
-  m_Name: Speed
+  m_Name: SpeedUp
   m_TagString: Pick Up
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3f6f90d96cb16fa429adc1aed28249ab, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -108,3 +109,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af871421631d02a4d9f083a9eedbaf01, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2905526238126426797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697069348036277909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7abcfafa05f6d1d428c7902a5694773e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PickupType: 1
