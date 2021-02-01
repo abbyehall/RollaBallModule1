@@ -5,11 +5,11 @@ public class Circular : MonoBehaviour
     public float speed = 3f;
     public float radius = 8f;
     public float direction = 1;
-    public float count = 0;
+    private float count = 0;
 
-    void Update()
+    void FixedUpdate()
     {
-        count -= .1f;
+        count += speed/100;
         float zNew = direction * radius * Mathf.Sin(count);
         float xNew = direction * radius * Mathf.Cos(count);
 
